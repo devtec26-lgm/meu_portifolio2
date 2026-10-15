@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portifolio-ivanilson</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="cabecalho">
+            <div class="logo_p"><img class="logo_p" src="/img/logo_P.png" alt="logo"></div>
+            <!-- <audio id="som" controls autoplay muted loop>
+                <source src="fokusGroove.mp3" type="audio/mpeg">
+            </audio> -->
+            <a class="cabecalhoLink" href="#">Home</a>
+            <a class="cabecalhoLink" href="sobremim.html">Sobre mim</a>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="home">
+            <section class="fundo">
+                <section class="apresentacao">
+                    <div id="textocolor">
+                        <h2>Eleve seu negócio digital a outro nível <span id="textoaAzul">com um Front-end de
+                                qualidade!</span></h2>
+                    </div>
+                    <div class="sobre apresentacao">
+                        <p>Olá! Sou Ivanilson Mendonça, Artista Visual e estudante de Desenvolvimento de Sistemas,
+                            com foco em Front-end e especialidade em React, HTML e CSS. Além de outras competências
+                            adiquiridas ao longo de minha carreira profissional. Ajudo pequenos negócios e designers a
+                            colocarem em prática boas ideias. Vamos conversar?</p>
+                    </div>
+                    <div class="redes">
+                        <a class="linkInstagram" href="https://www.instagram.com/mendoncaivanilson/"
+                            target="_blank">Instagram</a>
+                        <a class="linkedin" href="https://www.linkedin.com/in/ivanilson-mendon%C3%A7a-76a7192a/" target="_blank">LinkedIn</a>
+                        <a class="linkGitHub" href="https://github.com/devtec26-lgm" target="_blank">GitHub</a>
+                    </div>
+                </section>
+                <section class="foto">
+                    <img src="img/fotoperfil2.png" alt="Foto de perfil">
+                </section>
+            </section>
+            <section class="fundo2">
+                <section class="projetos">
+                    <div>
+                        <h2>Meus Projetos</h2>
+                        <p>Confira alguns dos projetos que desenvolvi e que fazem parte da minha jornada como desenvolvedor. </p>
+                    </div>
+                    <div class="cardbox">
+                        <article class="artigo">
+                            <div class="imagem"><img class="ilustracao" src="/img/logo completa.jpg" alt="logo devtec"></div>
+                            <div>
+                                <h4>Portifólio Profissional</h4>
+                                <p>Meu portifólio online, com informações sobre mim, meus projetos e formas de contato.</p>
+                                <div class="tecnologias">
+                                    <p class="linguagem">HTML</p>
+                                    <p class="linguagem">CSS</p>
+                                </div>
+                                <a href="">Ver projetos</a>
+                            </div>
+                        </article>
+                        <article class="artigo">
+                            <div class="imagem"><img class="ilustracao" src="img/projeto_web.jpg" alt="ilustração desenvolvimento web"></div>
+                            <div>
+                                <h4>Projetos Web</h4>
+                                <p>Aplicação web com foco em interatividade e design responsivo</p>
+                                <div class="tecnologias">
+                                    <p class="linguagem">HTML</p>
+                                    <p class="linguagem">CSS</p>
+                                </div>                               
+                            <a href="">Ver projetos</a>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                <section class="tecnologia">
+                    <h2>Tecnologias</h2>
+                    <p id="descricao_tec">Algumas tecnologias que utilizo no meu dia a dia.</p>
+                    <div id="linguagem">
+                        <p class="linguagem">HTML</p>
+                        <p class="linguagem">CSS</p>
+                        <p class="linguagem">JavaScript</p>
+                    </div>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por Ivanilson Mendonça</p>
+    </footer>
+
+    <script>
+  document.addEventListener('click', function() {
+    let audio = document.getElementById('som');
+    if (audio.muted) {
+      audio.muted = false; // Ativa o som após o primeiro clique
+      audio.play();
+    }
+  }, { once: true }); // Executa apenas no primeiro clique
+</script>
+</body>
+
+</html>

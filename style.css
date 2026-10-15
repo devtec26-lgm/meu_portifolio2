@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --cor-primaria: rgb(14, 226, 241) ;
+    --cor-secundaria: rgb(0, 0, 0) ;
+    --cor-terciaria: rgb(255, 255, 255);
+    --cor-caixa-clean: rgb(220, 200, 150);
+    --font-principal: 'Montserrat', sans-serif;
+    --font-secundaria: 'kronaOne', sans-serif;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+}
+
+body{  
+   box-sizing: border-box;  
+}
+
+header{
+   position: fixed;
+   width: 100%;
+   display: block;
+   align-items: center;
+   background-image: linear-gradient(to bottom, var(--cor-secundaria), var(--cor-secundaria), var(--cor-secundaria), rgb(3, 13, 20), rgb(3, 30, 49), rgb(3, 30, 49), var(--cor-primaria));
+   padding-top: 4vh;
+   padding-bottom: 4vh;
+   padding-left: 20%;
+   border-bottom: 2px solid var(--cor-primaria);
+   /* box-shadow: inset 0px -2px 5px var(--cor-primaria); */
+}
+
+nav.cabecalho{
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 80%;
+   height: 6vh;
+   gap: 2%;
+}
+
+a.cabecalhoLink {
+   text-decoration: none;
+   font-size: 2.9vh;
+   font-family: var(--font-principal);
+   font-weight: bold;
+   color: var(--cor-primaria);
+}
+
+.logo_p{
+   width: 25%;
+   margin: 0;
+}
+
+main{
+   display: flex;
+   background-color: rgba(13, 1, 61, 0.8);
+   background-image: url('img/free-video-3129671.avif');
+
+   /*height: 60vh;*/
+   color: var(--cor-terciaria);
+   font-family: var(--font-secundaria);
+   gap: 50px;
+}
+
+.sobremimFundo {
+
+   background-image: url('img/high-tech-eye.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+
+}
+
+.fundo {
+   display: flex;
+   align-items: center;
+   align-content: center;
+   
+   flex-wrap: wrap-reverse;
+   gap: 50px;
+   background-color: rgba(1, 2, 41, 0.8);
+}
+
+section.apresentacao {
+   font-size: 3vh;
+   display: flex;
+   padding-top: 21vh;
+   padding-left: 20%;
+   padding-bottom: 10vh;
+   flex-direction: column;
+   text-align: justify;
+   width: 30%;
+}
+
+#textoaAzul {
+   color: var(--cor-primaria);
+}
+
+div.sobre {
+   width: 100%;
+   padding-top: 3vh;
+   font-size: 3.1vh;
+   line-height: 1.5rem;
+   text-align: justify;
+}
+
+div.sobremim {
+   width: 100%;
+   padding-top: 3vh;
+   font-size: 3vh;
+   line-height: 1.5rem;
+   text-align: left;
+}
+
+div.redes {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 1.5%;
+   padding-top: 6%;
+
+}
+
+
+.linkGitHub {
+   text-decoration: none;
+   color: var(--cor-secundaria);
+   font-size: 2.2vh;
+   font-family: var(--font-principal);
+   font-weight: bold;
+   background: var(--cor-primaria);
+   padding: 10px 5%;
+   border-radius: 10px;
+}
+
+.linkGitHub:hover {
+   background-color: rgba(220, 200, 150, 0.2);
+   box-shadow: 0px 0px 10px var(--cor-caixa-clean);
+   color: var(--cor-primaria);
+   transition: 0.2s;
+}
+
+.linkedin {
+   text-decoration: none;
+   color: var(--cor-secundaria);
+   font-size: 2.2vh;
+   font-family: var(--font-principal);
+   font-weight: bold;
+   background: var(--cor-primaria);
+   padding: 10px 5%;
+   border-radius: 10px;
+}
+
+.linkedin:hover {
+   background-color: rgba(220, 200, 150, 0.2);
+   box-shadow: 0px 0px 10px var(--cor-caixa-clean);
+   color: var(--cor-primaria);
+   transition: 0.2s;
+}
+
+.linkInstagram {
+   text-decoration: none;
+   color: var(--cor-secundaria);
+   font-size: 2.2vh;
+   font-family: var(--font-principal);
+   font-weight: bold;
+   background: var(--cor-primaria);
+   padding: 10px 5%;
+   border-radius: 10px;
+}
+
+.linkInstagram:hover {
+   background-color: rgba(220, 200, 150, 0.2);
+   box-shadow: 0px 0px 10px var(--cor-caixa-clean);
+   color: var(--cor-primaria);
+   transition: 0.2s;
+}
+
+section.foto {
+   display: flex;
+   justify-content: center;
+   width: auto;
+   margin-top: 12vh;
+}
+
+
+img {
+   width: 52vh;
+   border-radius: 10%;
+   border: 2px solid var(--cor-primaria);
+   box-shadow: 0px 0px 15px var(--cor-primaria);
+
+}
+
+@media (max-width: 800px) {
+   main {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+   }
+   header{
+      padding:  3vh 10%;
+
+   }
+   nav.cabecalho {
+      display: flex;
+      justify-content: flex-start;
+      align-content: center;
+      width: 80%;
+      gap: 5%;
+   }
+
+   a.cabecalhoLink {
+      font-size: 2.3vh;
+   }
+
+   .logo_p{
+      width: 40%;
+   }
+
+
+   section.apresentacao {
+      width: 80%;
+      padding: 0% 10% 0% 10%;
+      margin: auto auto 5% auto;
+      text-align: center;
+      font-size: 1.5rem; 
+   }
+
+
+/* texto apresentação e sobre*/
+   section.apresentacao h2 {
+      font-size: 1.6rem;
+   }
+
+   .sobre p {
+       font-size: 2.9vh;
+       text-align: left;
+   }
+
+
+   section.foto {
+      width: auto;
+      justify-content: center;
+      margin: 15vh auto 0 auto;
+      padding: 0% 20% auto 20%;
+   }
+
+   img {
+      margin-top: 15%;
+      width: 80%;
+   }
+
+
+   div.sobremim {
+
+      font-size: 2.9vh;
+      line-height: 1.5rem;
+      text-align: justify;
+   }
+
+    .redes{
+      display: flex;
+      flex-direction:column;
+      gap: 1vh;
+   }
+    
+   .linkInstagram {
+      padding: 10px 3.5%;
+      font-size: 2.2vh;
+       margin: 1.5vh 0;
+   }
+
+   .linkGitHub {
+      padding: 10px 3.5%;
+      font-size: 2.2vh;
+       margin: 1.5vh 0;
+   }
+
+   .linkedin {
+      padding: 10px 3.5%;
+      font-size: 2.2vh;
+       margin: 1.5vh 0;
+   }
+
+   footer p {
+      font-size: 0.9rem;
+
+   }
+
+/*responsividade referente a meus projetos*/
+
+  
+
+   .cardbox{
+      flex-direction: column;
+
+   }
+   .artigo{
+      flex-direction: column;
+      width: 100%;
+      margin: 3%;
+   }
+
+   .fundo2{
+      
+      margin: 0 20%;
+   }
+   
+   .projetos{
+      margin: auto;
+      width: auto; 
+}
+}
+
+
+footer {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--cor-primaria);
+   color: var(--cor-secundaria);
+   font-family: var(--font-principal);
+   font-size: 1rem;
+   font-weight: 500;
+   height: 8vh;
+}
+
+
+ /*referente a area meus projetos*/
+.home{
+   
+   background-color: rgba(1, 2, 41, 0.8);
+}
+
+.fundo2{
+   width: 80%;
+   flex-direction: column;
+   margin: 0 20%;
+   justify-content: center;
+   
+}
+
+.projetos{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 100%; 
+}
+
+.cardbox{
+   display: flex;    
+   flex-wrap: wrap;
+   margin: 5vh 0;
+   gap: 2.5%;
+   width: 100%;
+}
+.ilustracao{
+   width: 25vh;
+   margin-right: 2vh;
+}
+.artigo{
+   display: flex;
+   align-items: center;
+   width: 50vh;
+   gap: 1.5%;
+   padding: 3%;
+   border: 2px solid var(--cor-primaria);
+   border-radius: 1.5vh;
+   box-shadow: 0px 0px 15px var(--cor-primaria);
+
+}
+.linguagem{
+   border: 2px solid var(--cor-primaria);
+   border-radius: 1.5vh;
+   padding: 0.1rem 0.8rem;
+   color: var(--cor-primaria);
+   font-size: 0.9rem;
+   align-items: center;
+}
+.tecnologias{
+   display: flex;
+   margin: 0 20%;
+   align-items: center;
+   margin: 5% 0;
+   gap: 2%;
+}
+a{
+   text-decoration: none;
+   color: var(--cor-primaria);
+}
+.tecnologia{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   align-items: center;
+   margin: 0 0 3% 0 ;
+   gap: 2.5%;
+}
+#descricao_tec{
+   font-size: 0.9rem;
+}
+
+#linguagem{
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      
+   }
+
+audio{
+   width: 80px;
+   height: 25px;
+   margin: 0;
+   background-color: var(--cor-primaria);
+   border-radius: 10px;
+}
+
+@media (max-width: 600px){
+  
+
+   .fundo2{
+      margin: 0 10%;
+      width: 80%;
+   }
+
+   .projeto{
+      margin: 0;
+   }
+   .cardbox{
+      width: 100%;   
+      margin: 5vh 0;
+   }
+   .ilustracao{
+      width: 25vh;
+      margin: 2vh;
+   }
+
+   .tecnologia{
+      flex-direction: row;
+      flex-wrap: wrap;
+   }
+
+   #linguagem{
+      display: flex;
+      gap: 2rem;
+      margin-top: 1rem;
+   }
+   
+}
