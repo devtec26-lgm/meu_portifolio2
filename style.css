@@ -336,7 +336,9 @@ footer {
    
    background-color: rgba(1, 2, 41, 0.8);
 }
-
+.animate__animated.animate__bounce {
+  --animate-duration: 5s;
+}
 .fundo2{
    width: 80%;
    flex-direction: column;
